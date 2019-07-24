@@ -1,0 +1,37 @@
+@import '../../styles/index.less';
+
+@layout-prefix-cls: ~"@{primary-name}-layout";
+
+.@{layout-prefix-cls}-container {
+  height: calc(100vh - @layout-header-h);
+  margin: 0 50px;
+
+  .@{layout-prefix-cls}-breadcrumb {
+    padding: 20px 0;
+    font-size: 16px;
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .@{layout-prefix-cls}-box {
+    height: calc(100% - 64px - 30px);
+    border-radius: 6px;
+    box-shadow: @box-shadow-01;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+  }
+
+  .@{layout-prefix-cls}-sider {
+    width: 200px;
+    min-width: 200px;
+    background-color: @layout-black;
+    height: 100%;
+  }
+
+  .@{layout-prefix-cls}-content {
+    flex: 1;
+    padding: 12px 24px;
+  }
+}
